@@ -24,14 +24,14 @@
 #'@export
 #'@name getFields
 
-getFields<-function(year=2016){
+getFields<-function(year=2019){
   # year=2016
   # year=2013
-  if (year==2016) {
-  sas=readLines(system.file("extdata", "NCDB_PUF_Labels_2016fixed.sas", package = "NCDBR")) 
+  if (year==2019) {
+  sas=readLines(system.file("extdata", "NCDB PUF SAS Labels 2019.sas.sas", package = "NCDBR2")) 
   top=8  
   } else {
-  sas=readLines(system.file("extdata", "NCDB_PUF_Labels_2013fixed.sas", package = "NCDBR"))
+  sas=readLines(system.file("extdata", "NCDB_PUF_Labels_2013fixed.sas", package = "NCDBR2"))
   top=20  
   }
   # sas=readLines(system.file("extdata", "NCDB_PUF_Labels_2013.sas", package = "NCDBR")) #to see rows causing probs
